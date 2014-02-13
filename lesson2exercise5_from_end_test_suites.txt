@@ -1,0 +1,52 @@
+# Use this to try out anything you like. Use print to display your answer
+# when you press the "Test Run" button.
+# Use the "Reset" button to reset the screen 
+
+def tester(countdown):
+    print 'template'
+    while countdown >= 0 :
+        print countdown
+        countdown = countdown - 1
+        
+#tester is the original function. 
+
+def testera(countdown):
+    print 'a'
+    while countdown >= 0 :
+      if False :
+            break
+      print countdown
+      countdown = countdown - 1
+        
+def testerb(countdown):
+    print 'b'
+    while True :
+        if countdown >= 0:
+            break
+        print countdown
+        countdown = countdown - 1
+
+def testerc(countdown):
+    print 'c'
+    while countdown >= 0 :
+        print countdown
+        countdown = countdown - 1
+        break
+        
+def testerd(countdown):
+    print 'd'
+    while countdown >= 0 :
+        print countdown
+        countdown = countdown - 1
+        if countdown >= 0 :
+            print countdown
+            countdown = countdown - 1
+        else:
+            break
+            
+            
+print tester(5)
+print testera(5)
+print testerb(5)
+print testerc(5)
+print testerd(5)
